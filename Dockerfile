@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy the static HTMLs to the nginx directory
-COPY public /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 
 # Copy the nginx configuration template to the nginx config directory
 COPY nginx/default.template /etc/nginx/conf.d/default.template
