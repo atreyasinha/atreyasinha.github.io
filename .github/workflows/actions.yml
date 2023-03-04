@@ -21,9 +21,9 @@ jobs:
         
       - name: check
         run: |
-          echo $project_id
-          echo $service_account_email
-          echo $service_account_key
+          echo "$project_id"
+          echo "$service_account_email"
+          echo "$service_account_key"
 
 #       - name: Configure Docker
 #         run: gcloud auth configure-docker --quiet
