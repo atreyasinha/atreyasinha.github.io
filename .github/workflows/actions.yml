@@ -18,7 +18,9 @@ jobs:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_email: ${{ secrets.GCP_EMAIL }}
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
-        run:
+        
+      - name: check
+        run: |
           echo $project_id
           echo $service_account_email
           echo $service_account_key
